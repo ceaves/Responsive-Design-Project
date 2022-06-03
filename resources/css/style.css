@@ -90,7 +90,17 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
@@ -98,6 +108,7 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
+
   }
 
   header .content {
@@ -137,12 +148,12 @@ header .mobile {
 
 #sign-up-cta {
   position: relative;
+  top: 171px;
+  left: 10%;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-top: 10.625rem;
-  margin-left: 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -192,7 +203,7 @@ header .mobile {
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 895px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -224,7 +235,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -355,14 +366,13 @@ header .mobile {
   padding: 0 1%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
 
   #filters-section .content {
     margin-bottom: 1rem;
-    padding: 0 0.625rem;
   }
 
   #filters-section .content h2 {
@@ -378,20 +388,7 @@ header .mobile {
   }
 
   #filters-section .images-container {
-    display: flex;
-    max-width: 100%;
-    padding: 0 1%;
-  }
-  
-
-
-  .image-container {
-    overflow: hidden;
-  }
-
-  .image-container img {
-    display: inline-block;
-    max-width: 10%;
+    padding: 0;
   }
 
   #filters-section .extra {
@@ -426,17 +423,24 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
-  #quotes-section content {
+@media only screen and (max-width: 895px) {
+  #quotes-section .content {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
+    flex-flow: column;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
